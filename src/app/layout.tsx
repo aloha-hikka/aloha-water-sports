@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from "react";
+// අලුත් Button එක Import කරගත්තා
+import ScrollToTop from "./ScrollToTop";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -26,8 +28,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="bg-[#0A0A0A] text-white antialiased">
+      <body className="bg-[#0A0A0A] text-white antialiased relative">
         {children}
+        {/* හැම පිටුවකම පේන්න මෙතනට දැම්මා */}
+        <ScrollToTop />
       </body>
     </html>
   );
