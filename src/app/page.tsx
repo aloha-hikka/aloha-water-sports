@@ -336,39 +336,11 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="transition-transform duration-500 group-hover:rotate-12"
-          >
-            <circle
-              cx="16"
-              cy="16"
-              r="14"
-              stroke="#D4AF37"
-              strokeWidth="1"
-              fill="none"
-            />
-            <path
-              d="M6 20 Q10 12 16 16 Q22 20 26 12"
-              stroke="#D4AF37"
-              strokeWidth="1.2"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <path
-              d="M8 24 Q13 18 16 20 Q19 22 24 18"
-              stroke="#D4AF37"
-              strokeWidth="0.8"
-              fill="none"
-              strokeLinecap="round"
-              opacity="0.6"
-            />
-            <circle cx="16" cy="10" r="2" fill="#D4AF37" opacity="0.9" />
-          </svg>
+          <img 
+            src="/images/main/logo.png" 
+            alt="Aloha Water Sports" 
+            className="w-12 h-12 rounded-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
           <div>
             <div
               className="text-white text-sm font-semibold tracking-[0.15em] uppercase leading-none"
@@ -602,7 +574,7 @@ function HeroSection() {
           className="flex items-center gap-2 text-white/60 text-[10px] tracking-[0.2em] uppercase hover:text-white transition-colors cursor-pointer"
           style={{ fontFamily: "var(--font-inter, sans-serif)" }}
          >
-         Visit US <ArrowUpRight size={12} />
+          Visit US <ArrowUpRight size={12} />
         </motion.a>
         </div>
         </motion.div>
