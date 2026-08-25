@@ -471,9 +471,13 @@ function Navigation() {
                   {link}
                 </button>
               ))}
-              <button className="mt-2 border border-[#D4AF37] text-white text-[10px] tracking-[0.25em] uppercase px-5 py-2.5 text-center">
-                Visit US
-              </button>
+              <a 
+               href="https://maps.app.goo.gl/9dbQrikWmZzPJUiV9" 
+               target="_blank"
+               rel="noopener noreferrer"
+               className="mt-2 border border-[#D4AF37] text-white text-[10px] tracking-[0.25em] uppercase px-5 py-2.5 text-center block">
+               Visit US
+              </a>
             </div>
           </motion.div>
         )}
@@ -580,22 +584,27 @@ function HeroSection() {
           </p>
 
           <div className="flex items-center gap-3">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-[#D4AF37] text-[#0A0A0A] text-[10px] tracking-[0.3em] uppercase px-7 py-3.5 font-semibold"
-              style={{ fontFamily: "var(--font-inter, sans-serif)" }}
+           <motion.button
+            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
+            className="bg-[#D4AF37] text-[#0A0A0A] text-[10px] tracking-[0.3em] uppercase px-7 py-3.5 font-semibold"
+            style={{ fontFamily: "var(--font-inter, sans-serif)" }}
             >
-              Explore Services
-            </motion.button>
-            <motion.button
-              whileHover={{ x: 4 }}
-              className="flex items-center gap-2 text-white/60 text-[10px] tracking-[0.2em] uppercase hover:text-white transition-colors"
-              style={{ fontFamily: "var(--font-inter, sans-serif)" }}
-            >
-              Our Story <ArrowUpRight size={12} />
-            </motion.button>
-          </div>
+            Explore Services
+          </motion.button>
+
+         <motion.a
+          href="https://maps.app.goo.gl/9dbQrikWmZzPJUiV9"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ x: 4 }}
+          className="flex items-center gap-2 text-white/60 text-[10px] tracking-[0.2em] uppercase hover:text-white transition-colors cursor-pointer"
+          style={{ fontFamily: "var(--font-inter, sans-serif)" }}
+         >
+         Visit US <ArrowUpRight size={12} />
+        </motion.a>
+        </div>
         </motion.div>
 
         {/* Scroll indicator */}
@@ -897,7 +906,6 @@ function ExperienceSection() {
 
 function GalleryImage({ item, index }: { item: GalleryItem; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
-  // ෆෝන් එකට ගැළපෙන්න margin එක 0px කළා
   const isInView = useInView(ref, { once: true, margin: "0px" });
   const [hovered, setHovered] = useState(false);
 
