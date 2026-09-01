@@ -163,7 +163,6 @@ function GalleryImageCard({ img, index }: { img: any; index: number }) {
         <img
           src={img.src}
           alt={img.alt}
-          /* WENASA METHANA: grayscale eka ain kala. hover karama scale eka witharai wenas wenne */
           className={`w-full h-full object-cover transition-all duration-[900ms] ease-out
             ${isActive ? "scale-110" : "scale-100"}`}
         />
