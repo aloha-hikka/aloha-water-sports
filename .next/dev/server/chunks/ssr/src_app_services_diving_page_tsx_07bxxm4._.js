@@ -175,8 +175,8 @@ function GalleryImageCard({ img, index }) {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: img.src,
                     alt: img.alt,
-                    className: `w-full h-full object-cover transition-all duration-[900ms] ease-out
-            ${isActive ? "grayscale-0 scale-110" : "grayscale-[85%] scale-100"}`
+                    /* WENASA METHANA: grayscale eka ain kala. hover karama scale eka witharai wenas wenne */ className: `w-full h-full object-cover transition-all duration-[900ms] ease-out
+            ${isActive ? "scale-110" : "scale-100"}`
                 }, void 0, false, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
                     lineNumber: 163,
@@ -192,7 +192,7 @@ function GalleryImageCard({ img, index }) {
           ${isActive ? "opacity-40" : "opacity-90"}`
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 171,
+                lineNumber: 172,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -200,7 +200,7 @@ function GalleryImageCard({ img, index }) {
           ${isActive ? "border-[#D4AF37]/50" : "border-[#D4AF37]/0"}`
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 176,
+                lineNumber: 177,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -211,20 +211,20 @@ function GalleryImageCard({ img, index }) {
                         className: "w-full h-px bg-[#D4AF37]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 183,
+                        lineNumber: 184,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-px h-full bg-[#D4AF37] absolute top-0 right-0"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 184,
+                        lineNumber: 185,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 181,
+                lineNumber: 182,
                 columnNumber: 7
             }, this)
         ]
@@ -281,7 +281,7 @@ function GalleryImageCard({ img, index }) {
                                     className: "w-6 h-6 text-[#D4AF37] group-hover:rotate-12 transition-transform duration-500"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 220,
+                                    lineNumber: 221,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -293,19 +293,19 @@ function GalleryImageCard({ img, index }) {
                                             children: "Water Sports"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 222,
+                                            lineNumber: 223,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 219,
+                            lineNumber: 220,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -320,13 +320,13 @@ function GalleryImageCard({ img, index }) {
                                                 className: "absolute -bottom-1 left-0 w-0 h-px bg-[#D4AF37] group-hover:w-full transition-all duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 235,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, link, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 228,
+                                        lineNumber: 229,
                                         columnNumber: 15
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -335,13 +335,13 @@ function GalleryImageCard({ img, index }) {
                                     children: "Book Now"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 237,
+                                    lineNumber: 238,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 226,
+                            lineNumber: 227,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -351,23 +351,23 @@ function GalleryImageCard({ img, index }) {
                                 className: "w-7 h-7"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 246,
+                                lineNumber: 247,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 245,
+                            lineNumber: 246,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
-                    lineNumber: 218,
+                    lineNumber: 219,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 208,
+                lineNumber: 209,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -392,17 +392,17 @@ function GalleryImageCard({ img, index }) {
                                     className: "w-8 h-8"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 261,
+                                    lineNumber: 262,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 260,
+                                lineNumber: 261,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 259,
+                            lineNumber: 260,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -427,12 +427,12 @@ function GalleryImageCard({ img, index }) {
                                             children: link
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 272,
+                                            lineNumber: 273,
                                             columnNumber: 19
                                         }, this)
                                     }, link, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 267,
                                         columnNumber: 17
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -442,30 +442,30 @@ function GalleryImageCard({ img, index }) {
                                     children: "Book Now"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 281,
+                                    lineNumber: 282,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 264,
+                            lineNumber: 265,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
-                    lineNumber: 253,
+                    lineNumber: 254,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 251,
+                lineNumber: 252,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-/* -------------------------------------------------------------------------- */ /*  FOOTER (inline SVG icons — no lucide social imports)                     */ /* -------------------------------------------------------------------------- */ function Footer() {
+/* -------------------------------------------------------------------------- */ /*  FOOTER                                                                    */ /* -------------------------------------------------------------------------- */ function Footer() {
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const { scrollYProgress } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScroll"])({
         target: ref,
@@ -494,12 +494,12 @@ function GalleryImageCard({ img, index }) {
                     className: "w-full h-full bg-[url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2000')] bg-cover bg-center"
                 }, void 0, false, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
-                    lineNumber: 308,
+                    lineNumber: 309,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 307,
+                lineNumber: 308,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -531,14 +531,14 @@ function GalleryImageCard({ img, index }) {
                                         children: "Aloha"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 320,
+                                        lineNumber: 321,
                                         columnNumber: 23
                                     }, this),
                                     "?"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 313,
+                                lineNumber: 314,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -546,7 +546,7 @@ function GalleryImageCard({ img, index }) {
                                 children: "Let the turquoise waters of the Indian Ocean become your next story. Reserve your adventure today."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 322,
+                                lineNumber: 323,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -558,19 +558,19 @@ function GalleryImageCard({ img, index }) {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 330,
+                                        lineNumber: 331,
                                         columnNumber: 31
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 326,
+                                lineNumber: 327,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 312,
+                        lineNumber: 313,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -585,7 +585,7 @@ function GalleryImageCard({ img, index }) {
                                                 className: "w-5 h-5 text-[#D4AF37]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 338,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -593,13 +593,13 @@ function GalleryImageCard({ img, index }) {
                                                 children: "Aloha Water Sports"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 338,
+                                                lineNumber: 339,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 336,
+                                        lineNumber: 337,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -607,13 +607,13 @@ function GalleryImageCard({ img, index }) {
                                         children: "Premium ocean experiences on the shores of Sri Lanka."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 340,
+                                        lineNumber: 341,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 335,
+                                lineNumber: 336,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -623,7 +623,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Explore"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 346,
+                                        lineNumber: 347,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -636,12 +636,12 @@ function GalleryImageCard({ img, index }) {
                                                     children: "Services"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 349,
+                                                    lineNumber: 350,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 348,
+                                                lineNumber: 349,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -651,12 +651,12 @@ function GalleryImageCard({ img, index }) {
                                                     children: "Experience"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 355,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 353,
+                                                lineNumber: 354,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -666,12 +666,12 @@ function GalleryImageCard({ img, index }) {
                                                     children: "Gallery"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 359,
+                                                    lineNumber: 360,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 358,
+                                                lineNumber: 359,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -681,24 +681,24 @@ function GalleryImageCard({ img, index }) {
                                                     children: "Reviews"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 364,
+                                                    lineNumber: 365,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 363,
+                                                lineNumber: 364,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 347,
+                                        lineNumber: 348,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 345,
+                                lineNumber: 346,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -708,7 +708,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 372,
+                                        lineNumber: 373,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -721,14 +721,14 @@ function GalleryImageCard({ img, index }) {
                                                         className: "w-4 h-4 text-[#D4AF37]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                                        lineNumber: 375,
+                                                        lineNumber: 376,
                                                         columnNumber: 17
                                                     }, this),
                                                     " Hikkaduwa, Sri Lanka"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 374,
+                                                lineNumber: 375,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -738,14 +738,14 @@ function GalleryImageCard({ img, index }) {
                                                         className: "w-4 h-4 text-[#D4AF37]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                                        lineNumber: 378,
+                                                        lineNumber: 379,
                                                         columnNumber: 17
                                                     }, this),
                                                     " +94 77 647 6362"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 377,
+                                                lineNumber: 378,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -755,26 +755,26 @@ function GalleryImageCard({ img, index }) {
                                                         className: "w-4 h-4 text-[#D4AF37]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                                        lineNumber: 381,
+                                                        lineNumber: 382,
                                                         columnNumber: 17
                                                     }, this),
                                                     " hikka.aloha@gmail.com"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 381,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 373,
+                                        lineNumber: 374,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 371,
+                                lineNumber: 372,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -784,7 +784,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Follow"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 387,
+                                        lineNumber: 388,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -833,17 +833,17 @@ function GalleryImageCard({ img, index }) {
                                                         d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                                        lineNumber: 406,
+                                                        lineNumber: 405,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 404,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 400,
+                                                lineNumber: 399,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -859,35 +859,35 @@ function GalleryImageCard({ img, index }) {
                                                         d: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                                        lineNumber: 416,
+                                                        lineNumber: 414,
                                                         columnNumber: 18
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                                    lineNumber: 415,
+                                                    lineNumber: 413,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 410,
+                                                lineNumber: 408,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 388,
+                                        lineNumber: 389,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 386,
+                                lineNumber: 387,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 334,
+                        lineNumber: 335,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -899,19 +899,19 @@ function GalleryImageCard({ img, index }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 423,
+                        lineNumber: 421,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 311,
+                lineNumber: 312,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/services/diving/page.tsx",
-        lineNumber: 306,
+        lineNumber: 307,
         columnNumber: 5
     }, this);
 }
@@ -939,7 +939,7 @@ function GalleryImageCard({ img, index }) {
                 children: "Most Popular"
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 457,
+                lineNumber: 455,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -947,7 +947,7 @@ function GalleryImageCard({ img, index }) {
                 children: pkg.tagline
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 462,
+                lineNumber: 460,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -955,7 +955,7 @@ function GalleryImageCard({ img, index }) {
                 children: pkg.name
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 463,
+                lineNumber: 461,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -965,12 +965,12 @@ function GalleryImageCard({ img, index }) {
                         children: tag
                     }, tag, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 467,
+                        lineNumber: 465,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 465,
+                lineNumber: 463,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -978,7 +978,7 @@ function GalleryImageCard({ img, index }) {
                 children: pkg.description
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 476,
+                lineNumber: 474,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -989,7 +989,7 @@ function GalleryImageCard({ img, index }) {
                         children: pkg.displayPrice
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 479,
+                        lineNumber: 477,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -997,13 +997,13 @@ function GalleryImageCard({ img, index }) {
                         children: "per person, based on group size"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 480,
+                        lineNumber: 478,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 478,
+                lineNumber: 476,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,7 +1014,7 @@ function GalleryImageCard({ img, index }) {
                         children: "Includes"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 484,
+                        lineNumber: 482,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1026,25 +1026,25 @@ function GalleryImageCard({ img, index }) {
                                         className: "w-4 h-4 text-[#D4AF37] flex-shrink-0"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 488,
+                                        lineNumber: 486,
                                         columnNumber: 15
                                     }, this),
                                     f
                                 ]
                             }, f, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 487,
+                                lineNumber: 485,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 485,
+                        lineNumber: 483,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 483,
+                lineNumber: 481,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1057,20 +1057,20 @@ function GalleryImageCard({ img, index }) {
                                 className: "w-3.5 h-3.5 text-[#D4AF37]"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 498,
+                                lineNumber: 496,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
                                 className: "w-3.5 h-3.5 text-[#D4AF37]"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 500,
+                                lineNumber: 498,
                                 columnNumber: 13
                             }, this),
                             pkg.extraInfo.label
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 496,
+                        lineNumber: 494,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1080,18 +1080,18 @@ function GalleryImageCard({ img, index }) {
                                 children: item
                             }, item, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 506,
+                                lineNumber: 504,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 504,
+                        lineNumber: 502,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 495,
+                lineNumber: 493,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1100,13 +1100,13 @@ function GalleryImageCard({ img, index }) {
                 children: "Book Now"
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 513,
+                lineNumber: 511,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/services/diving/page.tsx",
-        lineNumber: 445,
+        lineNumber: 443,
         columnNumber: 5
     }, this);
 }
@@ -1114,11 +1114,9 @@ function GalleryImageCard({ img, index }) {
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [date, setDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [time, setTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    // වෙනස 1: හිස් අගයක් වුණත් ගන්න පුළුවන් විදියට State එක හැදුවා
     const [numberOfPersons, setNumberOfPersons] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const [totalPrice, setTotalPrice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        // වෙනස 2: කොටුව හිස් වෙලා තියෙන තත්පරේට Price එක 1කට හදලා පෙන්නනවා
         const persons = typeof numberOfPersons === "number" ? numberOfPersons : 1;
         setTotalPrice(calculatePrice(selectedPackage, persons));
     }, [
@@ -1192,12 +1190,12 @@ function GalleryImageCard({ img, index }) {
                             className: "w-6 h-6"
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 599,
+                            lineNumber: 595,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 595,
+                        lineNumber: 591,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1205,7 +1203,7 @@ function GalleryImageCard({ img, index }) {
                         children: "Reserve Your Dive"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 602,
+                        lineNumber: 598,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1213,7 +1211,7 @@ function GalleryImageCard({ img, index }) {
                         children: selectedPackage.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 605,
+                        lineNumber: 601,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1221,7 +1219,7 @@ function GalleryImageCard({ img, index }) {
                         children: selectedPackage.tagline
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 608,
+                        lineNumber: 604,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1235,7 +1233,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Full Name"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 612,
+                                        lineNumber: 608,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1247,13 +1245,13 @@ function GalleryImageCard({ img, index }) {
                                         className: "w-full bg-white/5 border border-white/10 focus:border-[#D4AF37] outline-none text-white px-4 py-3 rounded-sm transition-colors"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 615,
+                                        lineNumber: 611,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 611,
+                                lineNumber: 607,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1266,7 +1264,7 @@ function GalleryImageCard({ img, index }) {
                                                 children: "Date"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 627,
+                                                lineNumber: 623,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1277,13 +1275,13 @@ function GalleryImageCard({ img, index }) {
                                                 className: "w-full bg-white/5 border border-white/10 focus:border-[#D4AF37] outline-none text-white px-4 py-3 rounded-sm transition-colors [color-scheme:dark]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 630,
+                                                lineNumber: 626,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 626,
+                                        lineNumber: 622,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1293,7 +1291,7 @@ function GalleryImageCard({ img, index }) {
                                                 children: "Time"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 639,
+                                                lineNumber: 635,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1304,19 +1302,19 @@ function GalleryImageCard({ img, index }) {
                                                 className: "w-full bg-white/5 border border-white/10 focus:border-[#D4AF37] outline-none text-white px-4 py-3 rounded-sm transition-colors [color-scheme:dark]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 642,
+                                                lineNumber: 638,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 638,
+                                        lineNumber: 634,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 625,
+                                lineNumber: 621,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1326,7 +1324,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Number of Persons"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 653,
+                                        lineNumber: 649,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1334,7 +1332,6 @@ function GalleryImageCard({ img, index }) {
                                         type: "number",
                                         min: 1,
                                         value: numberOfPersons,
-                                        // වෙනස 3: මකනකොට හිස් වෙන්නත්, අලුත් අගය Type කරද්දී ඒක ගන්නත් අවසර දුන්නා
                                         onChange: (e)=>{
                                             const val = e.target.value;
                                             if (val === "") {
@@ -1346,7 +1343,6 @@ function GalleryImageCard({ img, index }) {
                                                 }
                                             }
                                         },
-                                        // වෙනස 4: හිස් කරලා වෙන තැනක් Click කළොත් ආයෙත් 1 වෙනවා (ආරක්ෂාවට)
                                         onBlur: ()=>{
                                             if (numberOfPersons === "") {
                                                 setNumberOfPersons(1);
@@ -1355,13 +1351,13 @@ function GalleryImageCard({ img, index }) {
                                         className: "w-full bg-white/5 border border-white/10 focus:border-[#D4AF37] outline-none text-white px-4 py-3 rounded-sm transition-colors"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 656,
+                                        lineNumber: 652,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 652,
+                                lineNumber: 648,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1372,7 +1368,7 @@ function GalleryImageCard({ img, index }) {
                                         children: "Estimated Total"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 684,
+                                        lineNumber: 678,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1383,13 +1379,13 @@ function GalleryImageCard({ img, index }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 687,
+                                        lineNumber: 681,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 683,
+                                lineNumber: 677,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1397,7 +1393,7 @@ function GalleryImageCard({ img, index }) {
                                 children: "Final price confirmed via WhatsApp based on group size & requirements."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 689,
+                                lineNumber: 683,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1409,35 +1405,35 @@ function GalleryImageCard({ img, index }) {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 697,
+                                        lineNumber: 691,
                                         columnNumber: 38
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 693,
+                                lineNumber: 687,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 610,
+                        lineNumber: 606,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 587,
+                lineNumber: 583,
                 columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/services/diving/page.tsx",
-            lineNumber: 580,
+            lineNumber: 576,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/services/diving/page.tsx",
-        lineNumber: 578,
+        lineNumber: 574,
         columnNumber: 5
     }, this);
 }
@@ -1453,7 +1449,7 @@ function DivingPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Navigation, {}, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 722,
+                lineNumber: 716,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1468,27 +1464,27 @@ function DivingPage() {
                                 className: "w-full h-full object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 727,
+                                lineNumber: 721,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-[#0A0A0A]/30"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 732,
+                                lineNumber: 726,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-[#0E2129]/40 mix-blend-multiply"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 733,
+                                lineNumber: 727,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 726,
+                        lineNumber: 720,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1515,14 +1511,14 @@ function DivingPage() {
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 743,
+                                            lineNumber: 737,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                             className: "w-3 h-3"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 746,
+                                            lineNumber: 740,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1531,14 +1527,14 @@ function DivingPage() {
                                             children: "Services"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 747,
+                                            lineNumber: 741,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                             className: "w-3 h-3"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 750,
+                                            lineNumber: 744,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1546,13 +1542,13 @@ function DivingPage() {
                                             children: "Diving"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 751,
+                                            lineNumber: 745,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 742,
+                                    lineNumber: 736,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1564,30 +1560,30 @@ function DivingPage() {
                                             children: "Adventures"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/services/diving/page.tsx",
-                                            lineNumber: 754,
+                                            lineNumber: 748,
                                             columnNumber: 28
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 753,
+                                    lineNumber: 747,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 737,
+                            lineNumber: 731,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 736,
+                        lineNumber: 730,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 725,
+                lineNumber: 719,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1603,7 +1599,7 @@ function DivingPage() {
                                     children: "Choose Your Dive"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 764,
+                                    lineNumber: 758,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1611,7 +1607,7 @@ function DivingPage() {
                                     children: "Pricing & Packages"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 767,
+                                    lineNumber: 761,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1619,13 +1615,13 @@ function DivingPage() {
                                     children: "Whether it's your first breath underwater or your hundredth dive, our PADI-guided experiences meet you where you are."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 770,
+                                    lineNumber: 764,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 763,
+                            lineNumber: 757,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1636,23 +1632,23 @@ function DivingPage() {
                                     onBook: openModal
                                 }, pkg.id, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 778,
+                                    lineNumber: 772,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 776,
+                            lineNumber: 770,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
-                    lineNumber: 762,
+                    lineNumber: 756,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 761,
+                lineNumber: 755,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1666,7 +1662,7 @@ function DivingPage() {
                                     className: "w-6 h-6 text-[#D4AF37] mx-auto mb-3"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 788,
+                                    lineNumber: 782,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1674,7 +1670,7 @@ function DivingPage() {
                                     children: "PADI Certified"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 789,
+                                    lineNumber: 783,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1682,13 +1678,13 @@ function DivingPage() {
                                     children: "All instructors are internationally certified for your safety."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 790,
+                                    lineNumber: 784,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 787,
+                            lineNumber: 781,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1697,7 +1693,7 @@ function DivingPage() {
                                     className: "w-6 h-6 text-[#D4AF37] mx-auto mb-3"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 795,
+                                    lineNumber: 789,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1705,7 +1701,7 @@ function DivingPage() {
                                     children: "Boat Included"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 796,
+                                    lineNumber: 790,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1713,13 +1709,13 @@ function DivingPage() {
                                     children: "Comfortable boat transport to the best dive sites in Hikkaduwa."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 797,
+                                    lineNumber: 791,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 794,
+                            lineNumber: 788,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1728,7 +1724,7 @@ function DivingPage() {
                                     className: "w-6 h-6 text-[#D4AF37] mx-auto mb-3"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 802,
+                                    lineNumber: 796,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1736,7 +1732,7 @@ function DivingPage() {
                                     children: "Small Groups"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 803,
+                                    lineNumber: 797,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1744,24 +1740,24 @@ function DivingPage() {
                                     children: "Personalized attention with intimate group sizes on every dive."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/services/diving/page.tsx",
-                                    lineNumber: 804,
+                                    lineNumber: 798,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/services/diving/page.tsx",
-                            lineNumber: 801,
+                            lineNumber: 795,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/services/diving/page.tsx",
-                    lineNumber: 786,
+                    lineNumber: 780,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 785,
+                lineNumber: 779,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1771,7 +1767,7 @@ function DivingPage() {
                         className: "absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#D4AF37]/[0.03] rounded-full blur-[120px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 813,
+                        lineNumber: 807,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1805,7 +1801,7 @@ function DivingPage() {
                                         children: "Explore the Depths"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 823,
+                                        lineNumber: 817,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1817,13 +1813,13 @@ function DivingPage() {
                                                 children: "the Surface"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 827,
+                                                lineNumber: 821,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 826,
+                                        lineNumber: 820,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1833,33 +1829,33 @@ function DivingPage() {
                                                 className: "w-10 h-px bg-[#D4AF37]/40"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 830,
+                                                lineNumber: 824,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1.5 h-1.5 rounded-full bg-[#D4AF37]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 831,
+                                                lineNumber: 825,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-10 h-px bg-[#D4AF37]/40"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                                lineNumber: 832,
+                                                lineNumber: 826,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 829,
+                                        lineNumber: 823,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 816,
+                                lineNumber: 810,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1869,29 +1865,29 @@ function DivingPage() {
                                         index: i
                                     }, img.src, false, {
                                         fileName: "[project]/src/app/services/diving/page.tsx",
-                                        lineNumber: 842,
+                                        lineNumber: 835,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/services/diving/page.tsx",
-                                lineNumber: 836,
+                                lineNumber: 830,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/services/diving/page.tsx",
-                        lineNumber: 815,
+                        lineNumber: 809,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 812,
+                lineNumber: 806,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Footer, {}, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 848,
+                lineNumber: 841,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(BookingModal, {
@@ -1900,13 +1896,13 @@ function DivingPage() {
                 selectedPackage: selectedPackage
             }, void 0, false, {
                 fileName: "[project]/src/app/services/diving/page.tsx",
-                lineNumber: 850,
+                lineNumber: 843,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/services/diving/page.tsx",
-        lineNumber: 721,
+        lineNumber: 715,
         columnNumber: 5
     }, this);
 }

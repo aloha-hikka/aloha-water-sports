@@ -163,8 +163,9 @@ function GalleryImageCard({ img, index }: { img: any; index: number }) {
         <img
           src={img.src}
           alt={img.alt}
+          /* WENASA METHANA: grayscale eka ain kala. hover karama scale eka witharai wenas wenne */
           className={`w-full h-full object-cover transition-all duration-[900ms] ease-out
-            ${isActive ? "grayscale-0 scale-110" : "grayscale-[85%] scale-100"}`}
+            ${isActive ? "scale-110" : "scale-100"}`}
         />
       </div>
 
@@ -294,7 +295,7 @@ function Navigation() {
 }
 
 /* -------------------------------------------------------------------------- */
-/*  FOOTER (inline SVG icons — no lucide social imports)                     */
+/*  FOOTER                                                                    */
 /* -------------------------------------------------------------------------- */
 
 function Footer() {
@@ -386,7 +387,6 @@ function Footer() {
           <div>
             <h4 className="text-white/80 text-sm tracking-widest uppercase mb-4">Follow</h4>
             <div className="flex gap-4">
-              {/* TripAdvisor (inline SVG) */}
               <a
                 href="https://www.tripadvisor.com/Attraction_Review-g304134-d28648467-Reviews-Hikkaduwa_Snorkeling_And_Diving_Aloha-Hikkaduwa_Galle_District_Southern_Province.html"
                 aria-label="TripAdvisor"
@@ -396,7 +396,6 @@ function Footer() {
                  <path d="M12.005 3.328c-4.437 0-9.697 1.815-11.597 4.772-.44.693-.207 1.933.567 2.656l1.246 1.157c-.206 1.347.16 2.766 1.05 3.79l3.036 3.447c.504.57 1.36.657 1.96.2.597-.457.674-1.286.17-1.856l-3.037-3.447c-.502-.572-.71-1.373-.59-2.146l4.24 3.935c1.472 1.366 3.733 1.366 5.205 0l4.24-3.935c.12.773-.087 1.574-.59 2.146l-3.035 3.447c-.505.57-.428 1.4.17 1.856.598.457 1.455.37 1.96-.2l3.036-3.447c.89-1.024 1.256-2.443 1.05-3.79l1.245-1.157c.774-.723 1.008-1.963.568-2.656-1.9-2.957-7.16-4.772-11.598-4.772zm0 2.215c3.21 0 7.158 1.22 8.71 2.85-1.294-1.354-4.896-2.023-8.71-2.023-3.814 0-7.416.67-8.71 2.023 1.552-1.63 5.5-2.85 8.71-2.85zm-4.71 3.5c1.558 0 2.82 1.26 2.82 2.82 0 1.557-1.262 2.82-2.82 2.82-1.558 0-2.82-1.263-2.82-2.82 0-1.56 1.262-2.82 2.82-2.82zm9.42 0c1.557 0 2.82 1.26 2.82 2.82 0 1.557-1.263 2.82-2.82 2.82-1.557 0-2.82-1.263-2.82-2.82 0-1.56 1.263-2.82 2.82-2.82zm-9.42 1.32c-.83 0-1.5.67-1.5 1.5 0 .828.67 1.5 1.5 1.5.828 0 1.5-.672 1.5-1.5 0-.83-.672-1.5-1.5-1.5zm9.42 0c-.828 0-1.5.67-1.5 1.5 0 .828.672 1.5 1.5 1.5.83 0 1.5-.672 1.5-1.5 0-.83-.67-1.5-1.5-1.5z"/>
                 </svg>
               </a>
-              {/* Facebook (inline SVG) */}
               <a
                 href="https://web.facebook.com/profile.php?id=100063598476996"
                 aria-label="Facebook"
@@ -406,7 +405,6 @@ function Footer() {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </a>
-              {/* Youtube/X (inline SVG) */}
               <a
                 href="https://www.youtube.com/@TharinduAloha"
                 aria-label="Youtube"
@@ -536,12 +534,10 @@ function BookingModal({
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  // වෙනස 1: හිස් අගයක් වුණත් ගන්න පුළුවන් විදියට State එක හැදුවා
   const [numberOfPersons, setNumberOfPersons] = useState<number | string>(1);
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    // වෙනස 2: කොටුව හිස් වෙලා තියෙන තත්පරේට Price එක 1කට හදලා පෙන්නනවා
     const persons = typeof numberOfPersons === "number" ? numberOfPersons : 1;
     setTotalPrice(calculatePrice(selectedPackage, persons));
   }, [selectedPackage, numberOfPersons]);
@@ -658,7 +654,6 @@ function BookingModal({
                   type="number"
                   min={1}
                   value={numberOfPersons}
-                  // වෙනස 3: මකනකොට හිස් වෙන්නත්, අලුත් අගය Type කරද්දී ඒක ගන්නත් අවසර දුන්නා
                   onChange={(e) => {
                     const val = e.target.value;
                     if (val === "") {
@@ -670,7 +665,6 @@ function BookingModal({
                       }
                     }
                   }}
-                  // වෙනස 4: හිස් කරලා වෙන තැනක් Click කළොත් ආයෙත් 1 වෙනවා (ආරක්ෂාවට)
                   onBlur={() => {
                     if (numberOfPersons === "") {
                       setNumberOfPersons(1);
@@ -808,7 +802,7 @@ export default function DivingPage() {
         </div>
       </section>
 
-{/* GALLERY */}
+      {/* GALLERY */}
       <section className="relative bg-[#0A0A0A] py-24 md:py-32 overflow-hidden">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#D4AF37]/[0.03] rounded-full blur-[120px] pointer-events-none" />
 
@@ -837,7 +831,6 @@ export default function DivingPage() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5
                        auto-rows-[160px] md:auto-rows-[200px]"
           >
-            {/* අර ලොකු Code එක වෙනුවට අපි හදපු අලුත් Card එක මෙතනට දැම්මා */}
             {GALLERY_IMAGES.map((img, i) => (
               <GalleryImageCard key={img.src} img={img} index={i} />
             ))}

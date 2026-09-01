@@ -91,7 +91,7 @@ function GalleryImageCard({ img, index }: { img: GalleryImage; index: number }) 
           src={img.src}
           alt={img.alt}
           className={`w-full h-full object-cover transition-all duration-[900ms] ease-out
-            ${isActive ? "grayscale-0 scale-110" : "grayscale-[85%] scale-100"}`}
+            ${isActive ? "scale-110" : "scale-100"}`}
         />
       </div>
 

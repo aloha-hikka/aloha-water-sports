@@ -99,7 +99,7 @@ const spanClasses = {
                     src: img.src,
                     alt: img.alt,
                     className: `w-full h-full object-cover transition-all duration-[900ms] ease-out
-            ${isActive ? "grayscale-0 scale-110" : "grayscale-[85%] scale-100"}`
+            ${isActive ? "scale-110" : "scale-100"}`
                 }, void 0, false, {
                     fileName: "[project]/src/app/services/snorkeling/SnorkelingGallery.tsx",
                     lineNumber: 90,

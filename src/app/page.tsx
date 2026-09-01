@@ -17,6 +17,9 @@ import {
   Anchor,
   Fish,
   ArrowUpRight,
+  X,
+  ChevronLeft, // Aluthin add kala
+  ChevronRight // Aluthin add kala
 } from "lucide-react";
 import Link from "next/link";
 
@@ -72,8 +75,7 @@ const SERVICES: Service[] = [
     title: "Snorkeling",
     slug: "snorkeling",
     tagline: "Beneath the surface, another world awaits.",
-    image:
-      "https://images.pexels.com/photos/26927362/pexels-photo-26927362.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=600",
+    image: "images/main/1.jpg",
     icon: <Waves size={18} strokeWidth={1} />,
   },
   {
@@ -82,8 +84,7 @@ const SERVICES: Service[] = [
     title: "Diving",
     slug: "diving",
     tagline: "Descend into the extraordinary deep.",
-    image:
-      "https://images.pexels.com/photos/4621616/pexels-photo-4621616.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=600",
+    image: "images/main/diving.jpg",
     icon: <Anchor size={18} strokeWidth={1} />,
   },
   {
@@ -92,8 +93,7 @@ const SERVICES: Service[] = [
     title: "Surfing",
     slug: "surfing",
     tagline: "Ride the raw power of the Indian Ocean.",
-    image:
-      "https://images.pexels.com/photos/34457608/pexels-photo-34457608.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=600",
+    image: "images/main/surfing.jpg",
     icon: <Wind size={18} strokeWidth={1} />,
   },
   {
@@ -102,12 +102,12 @@ const SERVICES: Service[] = [
     title: "Fishing",
     slug: "fishing",
     tagline: "Deep-sea expeditions at golden hour.",
-    image:
-      "https://images.pexels.com/photos/14318336/pexels-photo-14318336.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=600",
+    image: "images/main/fishing.jpg",
     icon: <Fish size={18} strokeWidth={1} />,
   },
 ];
 
+// OYATA THAWA PHOTOS ADD KARANNA ONA NAM MEKATA EKATHU KARANNA PULUWAN
 const GALLERY: GalleryItem[] = [
   {
     id: 1,
@@ -146,6 +146,23 @@ const GALLERY: GalleryItem[] = [
     src: "/images/main/7.jpg",
     alt: "Island silhouette",
   },
+  // Aluth Photos thawa add karanna methanata puluwan
+  {
+    id: 8,
+    src: "/images/main/diving.jpg",
+    alt: "Deep sea diving",
+  },
+  {
+    id: 9,
+    src: "/images/main/surfing.jpg",
+    alt: "Surfer riding a wave",
+    span: "col-span-2",
+  },
+  {
+    id: 10,
+    src: "/images/main/fishing.jpg",
+    alt: "Fishing in the ocean",
+  }
 ];
 
 const GUEST_NOTES: GuestNote[] = [
@@ -233,29 +250,12 @@ const PARTNERS: Partner[] = [
 
 const springConfig = { type: "spring" as const, stiffness: 60, damping: 20 };
 
-const revealVariants = {
-  hidden: { clipPath: "inset(100% 0% 0% 0%)", opacity: 0 },
-  visible: {
-    clipPath: "inset(0% 0% 0% 0%)",
-    opacity: 1,
-    transition: { duration: 1.1, ease: [0.16, 1, 0.3, 1] },
-  },
-};
-
 const slideUpVariants = {
   hidden: { y: 60, opacity: 0 },
   visible: (i: number) => ({
     y: 0,
     opacity: 1,
     transition: { ...springConfig, delay: i * 0.12 },
-  }),
-};
-
-const fadeInVariants = {
-  hidden: { opacity: 0 },
-  visible: (i: number) => ({
-    opacity: 1,
-    transition: { duration: 0.8, delay: i * 0.1 },
   }),
 };
 
@@ -334,7 +334,6 @@ function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <img 
             src="/images/main/logo.png" 
@@ -357,7 +356,6 @@ function Navigation() {
           </div>
         </Link>
 
-        {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <button
@@ -374,7 +372,6 @@ function Navigation() {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="flex items-center gap-4">
           <motion.a
             href="https://maps.app.goo.gl/9dbQrikWmZzPJUiV9" 
@@ -394,7 +391,6 @@ function Navigation() {
             />
           </motion.a>
 
-          {/* Mobile menu button */}
           <button
             className="lg:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -416,7 +412,6 @@ function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -476,7 +471,6 @@ function HeroSection() {
       className="relative h-screen w-full overflow-hidden"
       style={{ position: "sticky", top: 0 }}
     >
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -484,18 +478,14 @@ function HeroSection() {
             "url('/images/main/images.jpg')",
         }}
       />
-
-      {/* Noir gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-[#0E2129]/40" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/80 via-transparent to-transparent" />
 
-      {/* Animated overlay on scroll */}
       <motion.div
         style={{ opacity: overlayOpacity }}
         className="absolute inset-0 pointer-events-none"
       />
 
-      {/* Content — bottom left */}
       <motion.div
         style={{ y: textY }}
         className="absolute bottom-0 left-0 right-0 px-6 sm:px-12 lg:px-20 pb-16"
@@ -579,7 +569,6 @@ function HeroSection() {
         </div>
         </motion.div>
 
-        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -624,7 +613,6 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
       onMouseLeave={() => setHovered(false)}
     >
       <Link href={`/services/${service.slug}`} className="block w-full h-full">
-        {/* Background image */}
         <motion.div
           animate={{ scale: hovered ? 1.08 : 1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -632,7 +620,6 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           style={{ backgroundImage: `url('${service.image}')` }}
         />
 
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/90 via-[#0A0A0A]/40 to-transparent" />
         <motion.div
           animate={{ opacity: hovered ? 0.3 : 0 }}
@@ -640,16 +627,12 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           className="absolute inset-0 bg-[#D4AF37]"
         />
 
-        {/* Gold border trace on hover */}
         <motion.div
-          animate={{
-            opacity: hovered ? 1 : 0,
-          }}
+          animate={{ opacity: hovered ? 1 : 0 }}
           transition={{ duration: 0.3 }}
           className="absolute inset-0 border border-[#D4AF37] pointer-events-none z-20"
         />
 
-        {/* Vertical number */}
         <div className="absolute top-0 left-0 bottom-0 w-10 flex items-center justify-center">
           <div
             className="writing-vertical text-[9px] tracking-[0.4em] text-[#D4AF37]/60 uppercase select-none"
@@ -659,7 +642,6 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           </div>
         </div>
 
-        {/* Bottom content */}
         <div className="absolute bottom-0 left-0 right-0 p-5 pl-12 z-10">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-[#D4AF37]/80">{service.icon}</span>
@@ -679,7 +661,6 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             {service.tagline}
           </motion.p>
 
-          {/* Arrow */}
           <motion.div
             animate={{ x: hovered ? 0 : -8, opacity: hovered ? 1 : 0 }}
             transition={{ duration: 0.35 }}
@@ -694,16 +675,10 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
   );
 }
 
-// ─── SERVICES SECTION ────────────────────────────────────────────────────────
-
 function ServicesSection() {
   return (
-    <section
-      id="services"
-      className="relative z-10 bg-[#0E2129] py-24 lg:py-36"
-    >
+    <section id="services" className="relative z-10 bg-[#0E2129] py-24 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
-        {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-6">
           <div>
             <RevealBlock>
@@ -724,7 +699,6 @@ function ServicesSection() {
               </h2>
             </RevealBlock>
           </div>
-
           <RevealBlock delay={0.2} className="lg:max-w-xs">
             <p
               className="text-white/40 text-sm leading-relaxed"
@@ -736,7 +710,6 @@ function ServicesSection() {
           </RevealBlock>
         </div>
 
-        {/* Cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-3">
           {SERVICES.map((s, i) => (
             <ServiceCard key={s.id} service={s} index={i} />
@@ -759,12 +732,7 @@ function ExperienceSection() {
   const leafScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.95, 1, 1.05]);
 
   return (
-    <section
-      id="experience"
-      ref={ref}
-      className="relative z-10 bg-[#0A0A0A] py-24 lg:py-40 overflow-hidden"
-    >
-      {/* Background leaf */}
+    <section id="experience" ref={ref} className="relative z-10 bg-[#0A0A0A] py-24 lg:py-40 overflow-hidden">
       <motion.div
         style={{ y: leafY, scale: leafScale }}
         className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none select-none"
@@ -798,12 +766,7 @@ function ExperienceSection() {
             >
               Hikkaduwa
               <br />
-              <span
-                style={{
-                  color: "#D4AF37",
-                  fontStyle: "italic",
-                }}
-              >
+              <span style={{ color: "#D4AF37", fontStyle: "italic" }}>
                 Sri Lanka
               </span>
             </h2>
@@ -840,7 +803,6 @@ function ExperienceSection() {
             </p>
           </RevealBlock>
 
-          {/* Stats */}
           <RevealBlock delay={0.4}>
             <div className="grid grid-cols-3 gap-6">
               {[
@@ -876,7 +838,15 @@ function ExperienceSection() {
 
 // ─── GALLERY SECTION ─────────────────────────────────────────────────────────
 
-function GalleryImage({ item, index }: { item: GalleryItem; index: number }) {
+function GalleryImage({
+  item,
+  index,
+  onClick,
+}: {
+  item: GalleryItem;
+  index: number;
+  onClick: () => void;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "0px" });
   const [hovered, setHovered] = useState(false);
@@ -887,7 +857,6 @@ function GalleryImage({ item, index }: { item: GalleryItem; index: number }) {
       custom={index}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      // clipPath වෙනුවට හැම Browser එකකම වැඩ කරන y සහ opacity පාවිච්චි කළා
       variants={{
         hidden: { y: 40, opacity: 0 },
         visible: {
@@ -900,17 +869,15 @@ function GalleryImage({ item, index }: { item: GalleryItem; index: number }) {
           },
         },
       }}
-      className={`relative overflow-hidden ${item.span ?? ""}`}
+      className={`relative overflow-hidden cursor-pointer ${item.span ?? ""}`}
       style={{ minHeight: "220px" }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={onClick}
     >
       <motion.div
         animate={{
-          filter: hovered
-            ? "grayscale(0%) brightness(1.05)"
-            : "grayscale(90%) brightness(0.7)",
-          scale: hovered ? 1.06 : 1,
+          scale: hovered ? 1.05 : 1,
         }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="absolute inset-0 bg-cover bg-center"
@@ -920,18 +887,50 @@ function GalleryImage({ item, index }: { item: GalleryItem; index: number }) {
       <motion.div
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className="absolute inset-0 border border-[#D4AF37]/50 pointer-events-none z-10"
+        className="absolute inset-0 border-2 border-[#D4AF37]/50 pointer-events-none z-10"
       />
     </motion.div>
   );
 }
 
 function GallerySection() {
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  // Keyboard navigation (Escape, ArrowLeft, ArrowRight)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedImageIndex === null) return;
+      
+      if (e.key === "Escape") {
+        setSelectedImageIndex(null);
+      } else if (e.key === "ArrowRight") {
+        handleNext(e as unknown as React.MouseEvent);
+      } else if (e.key === "ArrowLeft") {
+        handlePrev(e as unknown as React.MouseEvent);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex]);
+
+  const handleNext = (e: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((prev) => (prev === GALLERY.length - 1 ? 0 : prev! + 1));
+    }
+  };
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e?.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((prev) => (prev === 0 ? GALLERY.length - 1 : prev! - 1));
+    }
+  };
+
+  const selectedImage = selectedImageIndex !== null ? GALLERY[selectedImageIndex] : null;
+
   return (
-    <section
-      id="gallery"
-      className="relative z-10 bg-[#0E2129] py-24 lg:py-36"
-    >
+    <section id="gallery" className="relative z-10 bg-[#0E2129] py-24 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
         <div className="mb-12">
           <RevealBlock>
@@ -957,19 +956,82 @@ function GallerySection() {
         {/* Masonry grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-3 auto-rows-[200px]">
           {GALLERY.map((item, i) => (
-            <GalleryImage key={item.id} item={item} index={i} />
+            <GalleryImage
+              key={item.id}
+              item={item}
+              index={i}
+              onClick={() => setSelectedImageIndex(i)} // Aluthin index eka pass kala
+            />
           ))}
         </div>
 
         <RevealBlock delay={0.3} className="mt-8 text-center">
           <p
-            className="text-white/25 text-xs tracking-[0.3em] uppercase"
+            className="text-white/40 text-xs tracking-[0.3em] uppercase"
             style={{ fontFamily: "var(--font-inter, sans-serif)" }}
           >
-            Hover to reveal colour · All images captured on location
+            Click to view · All images captured on location
           </p>
         </RevealBlock>
       </div>
+
+      {/* POP-UP / LIGHTBOX EFFECT */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setSelectedImageIndex(null)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 cursor-pointer backdrop-blur-sm"
+          >
+            {/* Close Button - Mobile waladi top-24 (pahala) wenna hadala header overlap eka fix kala */}
+            <button
+              onClick={(e) => { e.stopPropagation(); setSelectedImageIndex(null); }}
+              className="absolute top-24 right-4 sm:top-6 sm:right-6 lg:top-10 lg:right-10 text-white/70 hover:text-white transition-colors p-2 z-[110] bg-black/40 hover:bg-black/60 rounded-full"
+              aria-label="Close image"
+            >
+              <X size={28} />
+            </button>
+
+            {/* Previous Button */}
+            <button
+              onClick={handlePrev}
+              className="absolute left-4 lg:left-10 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-3 z-[110] bg-black/40 hover:bg-black/60 rounded-full backdrop-blur-md"
+              aria-label="Previous image"
+            >
+              <ChevronLeft size={32} />
+            </button>
+
+            {/* Next Button */}
+            <button
+              onClick={handleNext}
+              className="absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors p-3 z-[110] bg-black/40 hover:bg-black/60 rounded-full backdrop-blur-md"
+              aria-label="Next image"
+            >
+              <ChevronRight size={32} />
+            </button>
+
+            {/* Image Container */}
+            <motion.div
+              key={selectedImage.id} // Animated image changes
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="relative max-w-[85vw] max-h-[85vh] flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="w-auto h-auto max-w-full max-h-[85vh] object-contain rounded-sm shadow-2xl border border-white/10"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
@@ -1019,7 +1081,6 @@ function GuestNoteCard({ note, index }: { note: GuestNote; index: number }) {
       }}
       className="relative select-none"
     >
-      {/* Polaroid shell */}
       <div
         className="relative p-5 pb-8 shadow-2xl"
         style={{
@@ -1030,13 +1091,11 @@ function GuestNoteCard({ note, index }: { note: GuestNote; index: number }) {
           minHeight: "280px",
         }}
       >
-        {/* Tape effect */}
         <div
           className="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-6 opacity-50 rotate-1"
           style={{ backgroundColor: "#D4AF37" }}
         />
 
-        {/* Aged texture overlay */}
         <div
           className="absolute inset-0 opacity-5 mix-blend-multiply"
           style={{
@@ -1045,7 +1104,6 @@ function GuestNoteCard({ note, index }: { note: GuestNote; index: number }) {
           }}
         />
 
-        {/* Content */}
         <p
           className="text-sm leading-relaxed mb-6 relative"
           style={{
@@ -1055,10 +1113,9 @@ function GuestNoteCard({ note, index }: { note: GuestNote; index: number }) {
             fontSize: "0.8rem",
           }}
         >
-          &ldquo;{note.message}&rdquo;
+          “{note.message}”
         </p>
 
-        {/* Author */}
         <div className="relative">
           <div
             className="h-px w-10 mb-2"
@@ -1121,7 +1178,6 @@ function GuestNotesSection() {
           </RevealBlock>
         </div>
 
-        {/* Notes scattered layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-6 place-items-center lg:place-items-start">
           {GUEST_NOTES.map((note, i) => (
             <div key={note.id} className="relative">
@@ -1155,23 +1211,17 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
           "0 4px 30px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03)",
       }}
     >
-      {/* Stars */}
       <div className="flex items-center gap-1 mb-5">
         {Array.from({ length: review.rating }).map((_, i) => (
-          <Star
-            key={i}
-            size={10}
-            className="text-[#D4AF37] fill-[#D4AF37]"
-          />
+          <Star key={i} size={10} className="text-[#D4AF37] fill-[#D4AF37]" />
         ))}
       </div>
 
-      {/* Quote mark */}
       <div
         className="text-5xl leading-none text-[#D4AF37]/20 mb-3 -mt-2"
         style={{ fontFamily: "var(--font-playfair, serif)" }}
       >
-        &ldquo;
+        “
       </div>
 
       <p
@@ -1181,12 +1231,10 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
         {review.text}
       </p>
 
-      {/* Divider */}
       <div className="flex items-center gap-3 mb-4">
         <div className="h-px bg-[#D4AF37]/20 flex-1" />
       </div>
 
-      {/* Author */}
       <div className="flex items-center justify-between">
         <div>
           <div
@@ -1210,7 +1258,6 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
         </div>
       </div>
 
-      {/* Google badge */}
       <div className="absolute top-5 right-5 flex items-center gap-1 opacity-20">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
           <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -1225,10 +1272,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 
 function ReviewsSection() {
   return (
-    <section
-      id="reviews"
-      className="relative z-10 bg-[#0A0A0A] py-24 lg:py-36"
-    >
+    <section id="reviews" className="relative z-10 bg-[#0A0A0A] py-24 lg:py-36">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 gap-6">
           <div>
@@ -1297,7 +1341,6 @@ function PartnersMarquee() {
 
   return (
     <section className="relative z-10 bg-[#0E2129] py-14 overflow-hidden">
-      {/* Edge blurs */}
       <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
         style={{
           background: "linear-gradient(90deg, #0E2129 0%, transparent 100%)",
@@ -1309,7 +1352,6 @@ function PartnersMarquee() {
         }}
       />
 
-      {/* Header */}
       <div className="text-center mb-8">
         <span
           className="text-[10px] tracking-[0.4em] uppercase text-white/20"
@@ -1319,7 +1361,6 @@ function PartnersMarquee() {
         </span>
       </div>
 
-      {/* Marquee */}
       <div className="flex overflow-hidden">
         <div className="marquee-track flex items-center gap-16 whitespace-nowrap">
           {doubled.map((p, i) => (
@@ -1352,14 +1393,8 @@ function Footer() {
   const bgY = useTransform(scrollYProgress, [0, 1], [50, 0]);
 
   return (
-    <footer
-      id="contact"
-      ref={ref}
-      className="relative z-10 bg-[#0A0A0A] overflow-hidden"
-    >
-      {/* Hero CTA area */}
+    <footer id="contact" ref={ref} className="relative z-10 bg-[#0A0A0A] overflow-hidden">
       <div className="relative px-6 sm:px-12 lg:px-20 pt-24 lg:pt-36 pb-16">
-        {/* Subtle background image */}
         <motion.div
           style={{ y: bgY }}
           className="absolute inset-0 opacity-10 pointer-events-none"
@@ -1376,7 +1411,6 @@ function Footer() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] via-transparent to-[#0A0A0A] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative">
-          {/* Big CTA text */}
           <RevealBlock>
             <SectionLabel>Begin Your Journey</SectionLabel>
           </RevealBlock>
@@ -1409,10 +1443,8 @@ function Footer() {
 
           <GoldDivider className="mb-10 max-w-xl" />
 
-          {/* CTA grid */}
           <RevealBlock delay={0.3}>
             <div className="flex flex-wrap gap-4 mb-16">
-              {/* WhatsApp CTA */}
               <motion.a
                 href="https://wa.me/94776476362"
                 target="_blank"
@@ -1426,7 +1458,6 @@ function Footer() {
                 Chat on WhatsApp
               </motion.a>
 
-              {/* Email CTA */}
               <motion.a
                 href="https://maps.app.goo.gl/66TtyhngRrM4v8zV6"
                 whileHover={{ scale: 1.02 }}
@@ -1440,9 +1471,7 @@ function Footer() {
             </div>
           </RevealBlock>
 
-          {/* Bottom bar */}
           <div className="border-t border-white/8 pt-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-            {/* Logo text */}
             <div>
               <div
                 className="text-white text-lg tracking-[0.1em] uppercase mb-1"
@@ -1458,7 +1487,6 @@ function Footer() {
               </div>
             </div>
 
-            {/* Quick links */}
             <div className="flex items-center gap-6 flex-wrap">
               {["Services", "Gallery", "Reviews", "Privacy"].map((link) => (
                 <button
@@ -1471,7 +1499,6 @@ function Footer() {
               ))}
             </div>
 
-            {/* Social icons */}
             <div className="flex items-center gap-4">
               {[
                 {
@@ -1516,7 +1543,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Copyright */}
           <div className="mt-6 text-white/15 text-[9px] tracking-[0.3em] uppercase" style={{ fontFamily: "var(--font-inter, sans-serif)" }}>
             © {new Date().getFullYear()} Aloha Water Sports. All rights reserved. Crafted with love for the ocean.
           </div>
@@ -1532,12 +1558,8 @@ export default function HomePage() {
   return (
     <main className="relative">
       <Navigation />
-
-      {/* Sticky hero wrapper */}
       <div className="relative">
         <HeroSection />
-
-        {/* Overlapping sections slide over the sticky hero */}
         <div className="relative z-10">
           <ServicesSection />
           <ExperienceSection />
